@@ -2,12 +2,15 @@
 #define CAN_SEND_H
 #include "mbed.h"
 
-/*
+#if 0
+~ピン配列~
+F446RE D4 D10
+L432KC D10 D2
 
-CANSend can(D4,D10); RD TD
-can.SEND(1,1234); DATAは四桁以下専用です。五桁以上はしりません
-
-*/
+~使用方法~
+CANSend can(RD,TD); 
+can.SEND(1,1234); DATAは四桁以下専用です。五桁以上対応版は気が向いたら作ります.
+#endif
 
 class CANSend
 {
